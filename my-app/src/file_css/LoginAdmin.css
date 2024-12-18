@@ -1,0 +1,218 @@
+.LoginAdmin-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #e3f2ed !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.LoginAdmin-page .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+/* Header styling */
+.LoginAdmin-page header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.LoginAdmin-page .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #028a56;
+}
+
+/* Navigation styling */
+.LoginAdmin-page nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: auto;
+}
+
+.LoginAdmin-page nav ul li {
+  margin-right: 20px;
+}
+
+.LoginAdmin-page nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.LoginAdmin-page .auth-buttons {
+  margin-left: auto;
+}
+
+.LoginAdmin-page .auth-buttons button {
+  background-color: #147a63;
+  color: #fff;
+  border: 2px solid #147a63;
+  border-radius: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.LoginAdmin-page .auth-buttons button:hover {
+  background-color: #e3f2ed;
+  color: #147a63;
+}
+
+/* Main content styling */
+
+.LoginAdmin-page .container {
+  margin-left: 45px;
+}
+.LoginAdmin-page .main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.LoginAdmin-page .login {
+  width: 100%;
+  max-width: 600px;
+  background-color: #e3f2ed;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.LoginAdmin-page .main h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  color: #333;
+  margin-left: 180px;
+}
+
+/* Input and button styles in login */
+.LoginAdmin-page .main input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.LoginAdmin-page .main button {
+  width: 100%;
+  padding: 15px;
+  background-color: #0d754b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for buttons turned into hyperlinks */
+.LoginAdmin-page .btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  background-color: #0d754b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.LoginAdmin-page .btn:hover {
+  background-color: #095e3b;
+}
+
+/* Footer */
+.LoginAdmin-page footer {
+  background-color: #eaf5f2;
+  line-height: 1.5;
+}
+
+/* Thicker Footer Separator Line */
+.LoginAdmin-page .footer-separator {
+  width: 100%;
+  height: 10px; /* Increased height for a thicker line */
+  background-color: #147a63;
+}
+
+.LoginAdmin-page .footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.LoginAdmin-page .footer-logo img {
+  width: 150px;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.LoginAdmin-page .footer-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 75px;
+}
+
+.LoginAdmin-page .customer-care,
+.account,
+.social-media {
+  flex: 1;
+  min-width: 200px;
+}
+
+.LoginAdmin-page .customer-care h3,
+.account h3,
+.social-media h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.LoginAdmin-page .customer-care p,
+.account p,
+.social-media p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.LoginAdmin-page .footer-bottom {
+  margin-left: 75px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Social Media Icons */
+.LoginAdmin-page .social-icons {
+  display: flex;
+}
+
+.LoginAdmin-page .social-icons a {
+  margin-right: 15px;
+}
+
+.LoginAdmin-page .account {
+  text-decoration: none;
+}

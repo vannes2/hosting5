@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff; /* Ganti dengan warna sesuai kebutuhan */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dokter {
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #028a56;
+  }
+  

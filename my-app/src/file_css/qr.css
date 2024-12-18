@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header styling */
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #028a56;
+  }
+  
+  /* Navigasi */
+  .qr-page-container nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: auto; /* Menyebabkan navigasi ada di kiri */
+  }
+  
+  .qr-page-container nav ul li {
+    margin-right: 20px;
+  }
+  
+  .qr-page-container nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Tombol Login */
+  .qr-page-container .auth-buttons {
+    margin-left: auto; /* Menyebabkan tombol login ada di kanan */
+  }
+  
+  .qr-page-container .auth-buttons button {
+    background-color: #fff;
+    color: #147a63;
+    border: 2px solid #147a63;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .qr-page-container .auth-buttons button:hover {
+    background-color: #e3f2ed;
+  }
+  
+  .qr-page-container main {
+    text-align: center;
+    background: #fff;
+  }
+  
+  .qr-page-container .title h1 {
+    background-color: #eaf5f2;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .qr-page-container .title {
+    background-color: #eaf5f2;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .qr-page-container h1 {
+    color: #3b3b3b;
+    size-font: 40px;
+    font-weight: bold;
+  }
+  
+  .qr-page-container .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .qr-page-container .total h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .qr-page-container .total h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 0.5rem;
+  }
+  
+  .qr-page-container .grid-kiri {
+    margin-top: 50px;
+  }
+  
+  .qr-page-container .grid-kiri {
+    display: grid;
+    text-align: left;
+    margin-left: 150px;
+  }
+  
+  .qr-page-container .grid-kanan {
+    display: grid;
+    text-align: right;
+    margin-right: 150px;
+  }
+  
+  .qr-page-container .payment-section {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .qr-page-container .payment-section {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .qr-page-container .payment-info {
+    margin-bottom: 20px;
+  }
+  
+  .qr-page-container .amount {
+    color: #333;
+    font-size: 2em; /* Larger font size for the amount */
+  }
+  
+  .qr-page-container .qr-code-section {
+    margin: 20px auto;
+    background-color: #e3f2ed;
+    padding: 10px; /* Increased padding for more space */
+    width: 1050px; /* Increased width to make the section almost full-width */
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .qr-page-container .qr-code-section p {
+    margin: 50px auto;
+    width: 645px;
+  }
+  
+  .qr-page-container .qr-code-section img {
+    width: 250px; /* Larger width */
+    height: 250px; /* Larger height */
+    margin-left: 400px;
+  }
+  
+  .qr-page-container .copy-btn {
+    background-color: #147a63;
+    color: #fff;
+    padding: 10px 50px; /* Larger button padding */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px; /* Even larger font size for the button */
+  }
+  
+  .qr-page-container .popup-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Pop-Up Content */
+  .qr-page-container .popup-content {
+    background-color: #e9f5f3;
+    border-radius: 10px;
+    width: 406px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Pop-Up Container */
+  .qr-page-container .popup-overlay-unggah {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Pop-Up Content */
+  .qr-page-container .popup-content-unggah {
+    background-color: #e9f5f3;
+    border-radius: 10px;
+    width: 406px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for Pop-Up Header */
+  .qr-page-container .popup-header {
+    background-color: #287961;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .qr-page-container .selamat {
+    font-weight: bold;
+    font-size: 42px;
+    margin-top: 25px;
+  }
+  
+  .qr-page-container .koin {
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 19px;
+  }
+  
+  .qr-page-container .liat {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .qr-page-container .stars {
+    display: flex;
+    gap: 7px;
+    direction: rtl;
+    justify-content: center;
+  }
+  
+  .qr-page-container .stars input {
+    display: none;
+  }
+  
+  .qr-page-container .stars label {
+    font-size: 50px;
+    color: #d3d3d3;
+    cursor: pointer;
+  }
+  
+  .qr-page-container .stars input:checked ~ label,
+  .qr-page-container .stars label:hover,
+  .qr-page-container .stars label:hover ~ label {
+    color: #ffd700;
+  }
+  
+  .qr-page-container .popup-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 155px;
+    width: 500px;
+  }
+  
+  /* Buttons in Pop-Up */
+  .qr-page-container .popup-button-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .qr-page-container .tulis {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .qr-page-container .textarea {
+    margin-top: 23px;
+    width: 312px;
+    height: 43px;
+    font-size: 14px;
+  }
+  
+  .qr-page-container .unggah-btn {
+    color: white;
+    background-color: #287961;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+  }
+  
+  .qr-page-container .rekom-btn {
+    color: white;
+    background-color: #287961;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .qr-page-container .unggah-btn:hover,
+  .qr-page-container .rekom-btn:hover {
+    background-color: #1d5d47;
+  }
+  
+  /* Footer */
+  .qr-page-container footer {
+    background-color: #eaf5f2;
+    line-height: 1.5;
+  }
+  
+  /* Thicker Footer Separator Line */
+  .qr-page-container .footer-separator {
+    width: 100%;
+    height: 10px; /* Increased height for a thicker line */
+    background-color: #147a63;
+  }
+  
+  .qr-page-container .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .qr-page-container .footer-logo img {
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 10px;
+  }
+  
+  .qr-page-container .footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 75px;
+  }
+  
+  .qr-page-container .customer-care,
+  .account,
+  .social-media {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .qr-page-container .customer-care h3,
+  .account h3,
+  .social-media h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .qr-page-container .customer-care p,
+  .account p,
+  .social-media p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  /* Footer Bottom */
+  .qr-page-container .footer-bottom {
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Social Media Icons */
+  .qr-page-container .social-icons {
+    display: flex;
+  }
+  
+  .qr-page-container .social-icons a {
+    margin-right: 15px;
+  }
+  
+  .qr-page-container .account {
+    text-decoration: none;
+  }
+  

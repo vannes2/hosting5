@@ -1,0 +1,258 @@
+.recom-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.recom-page body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.recom-page h2 {
+  font-size: 30px;
+  margin-left: 70px;
+}
+
+.recom-page .title {
+  font-weight:bold;
+  font-size:40px;
+  margin-left:565px;
+}
+
+.recom-page .sub-title {
+  font-weight:bold;
+  font-size:40px;
+  margin-left:555px;
+}
+
+/* Header styling */
+.recom-page header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+}
+
+.recom-page .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #028a56;
+}
+
+/* Navigasi */
+.recom-page nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: auto; /* Menyebabkan navigasi ada di kiri */
+}
+
+.recom-page nav ul li {
+  margin-right: 20px;
+}
+
+.recom-page nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Tombol Login */
+.recom-page .auth-buttons {
+  margin-left: auto; /* Menyebabkan tombol login ada di kanan */
+}
+
+.recom-page .auth-buttons button {
+  background-color: #fff;
+  color: #147A63;
+  border: 2px solid #147A63;
+  border-radius: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.recom-page main {
+  padding: 50px;
+}
+
+.recom-page .search-section {
+  background-color: #e8f8f5;
+  padding: 20px;
+}
+
+.recom-page .search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px; /* Adjust this width as needed */
+  margin: 0 auto; /* Center the content */
+}
+
+.recom-page .recom-page .hero {
+  padding: 50px;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  margin: 0;
+  height: 20vh; /* Mengatur tinggi section menjadi 100% dari tinggi viewport */
+  display: flex;
+  justify-content: center; /* Menyelaraskan konten secara horizontal */
+  align-items: center; /* Menyelaraskan konten secara vertikal */
+  background-color: #e3f2ed; /* Tambahkan background untuk visibilitas */
+}
+
+.recom-page .hero-text h1 {
+  font-size: 70px;
+  color: #333;
+  text-align: center; /* Ini menyelaraskan teks secara horizontal di dalam div */
+}
+
+.recom-page .recommendations-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.recom-page .skin-problems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/*background-color: #EAF5F2;*/
+
+.recom-page .skin-problems div {
+  margin: 0 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.recom-page .skin-problems .badge {
+  display: inline-block;
+  background-color: #d3ede9;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #028a56;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.recom-page .product-category {
+  margin-bottom: 40px;
+}
+
+.recom-page .product-category h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Product list adjustments */
+.recom-page .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Mengurangi jarak antar produk */
+  justify-content: flex-start; /* Produk akan merapat ke kiri */
+}
+
+.recom-page .product-item {
+  background-color: white;
+  padding: 20px;
+  width: 23%; /* Menjaga ukuran produk, bisa diubah jika ingin lebih kecil/lebar */
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-right: 0; /* Menghapus margin kanan agar tidak ada jarak berlebih */
+}
+
+.recom-page .product-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.recom-page .product-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer */
+.recom-page footer {
+  background-color: #EAF5F2;
+  line-height: 1.5;
+}
+
+/* Thicker Footer Separator Line */
+.recom-page .footer-separator {
+  width: 100%;
+  height: 10px; /* Increased height for a thicker line */
+  background-color: #147A63;
+}
+
+.recom-page .footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recom-page .footer-logo img {
+  width: 150px;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.recom-page .footer-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 75px;
+}
+
+.recom-page .customer-care, .account, .social-media {
+  flex: 1;
+  min-width: 200px;
+}
+
+.recom-page .customer-care h3, .account h3, .social-media h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.recom-page .customer-care p, .account p, .social-media p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.recom-page .footer-bottom {
+  margin-left: 75px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Social Media Icons */
+.recom-page .social-icons {
+  display: flex;
+}
+
+.recom-page .social-icons a {
+  margin-right: 15px;
+}
+
+.recom-page .account {
+  text-decoration: none;
+}

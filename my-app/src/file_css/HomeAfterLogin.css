@@ -1,0 +1,238 @@
+/* Reset dan dasar styling */
+.home-after-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.home-after-page body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+.home-after-page header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-after-page .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #028A56;
+}
+
+/* Navigasi */
+.home-after-page nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+}
+
+.home-after-page nav ul li {
+    margin-right: 20px;
+}
+
+.home-after-page nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Tombol Profil */
+.home-after-page .auth-buttons {
+    margin-left: auto;
+}
+
+.home-after-page .auth-buttons button {
+    background-color: #fff;
+    color: #147A63;
+    border: 2px solid #147A63;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home-after-page .auth-buttons button:hover {
+    background-color: #E3F2ED;
+}
+
+/* Bagian Hero */
+.home-after-page .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAF5F2;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.home-after-page .hero-text h1 {
+    font-size: 40px;
+    color: #3b3b3b;
+    font-weight:bold;
+}
+
+.home-after-page .hero-text p {
+    margin: 20px 0;
+    color: #666;
+}
+
+/* Tombol Hero Section */
+.home-after-page .buttons button {
+    background-color: #147A63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.home-after-page .buttons button:hover {
+    background-color: #026f47;
+}
+
+/* Produk */
+.home-after-page .product-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.home-after-page .product-title {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.home-after-page .products {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.home-after-page .product-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-after-page .product-item {
+    width: 18%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-after-page .product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.home-after-page .product-item p {
+    font-size: 14px;
+    color: #333;
+}
+
+.home-after-page .product-item strong {
+    font-size: 16px;
+}
+
+/* Style untuk tombol Produk Lainnya */
+.home-after-page .btn-right button {
+    background-color: #147A63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.home-after-page .btn-right button:hover {
+    background-color: #026f47;
+}
+
+/* Footer */
+.home-after-page footer {
+    background-color: #EAF5F2;
+    line-height: 1.5;
+}
+
+/* Thicker Footer Separator Line */
+.home-after-page .footer-separator {
+    width: 100%;
+    height: 10px; /* Increased height for a thicker line */
+    background-color: #147A63;
+}
+
+.home-after-page .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-after-page .footer-logo img {
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.home-after-page .footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 75px;
+}
+
+.home-after-page .customer-care, .account, .social-media {
+    flex: 1;
+    min-width: 200px;
+}
+
+.home-after-page .customer-care h3, .account h3, .social-media h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.home-after-page .customer-care p, .account p, .social-media p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.home-after-page .footer-bottom {
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Social Media Icons */
+.home-after-page .social-icons {
+    display: flex;
+}
+
+.home-after-page .social-icons a {
+    margin-right: 15px;
+}
+
+.home-after-page .account {
+    text-decoration: none;
+}

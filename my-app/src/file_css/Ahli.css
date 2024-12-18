@@ -1,0 +1,85 @@
+/* Container utama */
+.ahli-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Input pencarian */
+  .search-bar {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Grid layout untuk dokter */
+  .dokter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom per baris */
+    gap: 20px; /* Jarak antar kartu */
+    margin-top: 20px;
+  }
+  
+  /* Gaya kartu dokter */
+  .dokter-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .dokter-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Gambar dokter */
+  .dokter-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Detail dokter */
+  .dokter-details {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .dokter-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .dokter-specialty,
+  .dokter-experience,
+  .dokter-schedule,
+  .dokter-price,
+  .dokter-rating {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .dokter-price {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 1024px) {
+    .dokter-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 kolom per baris */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .dokter-grid {
+      grid-template-columns: 1fr; /* 1 kolom per baris */
+    }
+  }
+  

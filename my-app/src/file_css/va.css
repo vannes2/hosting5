@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header styling */
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #028a56;
+  }
+  
+  /* Navigasi */
+  .va-page nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: auto; /* Menyebabkan navigasi ada di kiri */
+  }
+  
+  .va-page nav ul li {
+    margin-right: 20px;
+  }
+  
+  .va-page nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Tombol Login */
+  .va-page .auth-buttons {
+    margin-left: auto; /* Menyebabkan tombol login ada di kanan */
+  }
+  
+  .va-page .auth-buttons button {
+    background-color: #fff;
+    color: #147a63;
+    border: 2px solid #147a63;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .va-page .auth-buttons button:hover {
+    background-color: #e3f2ed;
+  }
+  
+  .va-page main {
+    text-align: center;
+    background: #fff;
+  }
+  
+  .va-page .title {
+    background-color: #eaf5f2;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  .va-page h1 {
+    color: #3b3b3b;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .va-page .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .va-page .total h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .va-page .total h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 0.5rem;
+  }
+  
+  .va-page .grid-kiri {
+    margin-top: 50px;
+  }
+  
+  .va-page .grid-kiri {
+    display: grid;
+    text-align: left;
+    margin-left: 150px;
+  }
+  
+  .va-page .grid-kanan {
+    display: grid;
+    text-align: right;
+    margin-right: 150px;
+  }
+  
+  .va-page .payment-section {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .va-page .payment-info {
+    margin-bottom: 20px;
+  }
+  
+  .va-page .amount {
+    color: #333;
+    font-size: 2em; /* Larger font size for the amount */
+  }
+  
+  .va-page .virtual-account-section {
+    margin: 20px auto;
+    background-color: #e3f2ed;
+    padding: 10px; /* Increased padding for more space */
+    width: 1050px; /* Increased width to make the section almost full-width */
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .va-page .virtual-account-section p {
+    margin: 50px auto;
+    width: 645px;
+  }
+  
+  .va-page .virtual-account-section h4 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .va-page .virtual-account-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .va-page .virtual-account-number {
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  .va-page .virtual-account-section img {
+    width: 300px; /* Larger width */
+    height: 300px; /* Larger height */
+    margin: 30px 0;
+  }
+  
+  .va-page .va-detail {
+    background-color: #147a63;
+    color: white;
+    width: 650px;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 185px;
+    border-radius: 12px;
+  }
+  
+  .va-page .va-detail h4 {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .va-page .virtual-account-section .bila {
+    margin-top: 20px;
+  }
+  
+  .va-page .copy-btn {
+    background-color: #147a63;
+    color: #fff;
+    padding: 10px 100px; /* Larger button padding */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .va-page .popup-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .va-page .popup-content {
+    background-color: #e9f5f3;
+    border-radius: 10px;
+    width: 406px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensuring the popup is positioned correctly */
+  }
+  
+  .va-page .popup-header {
+    background-color: #287961;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .va-page .popup-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 155px;
+  }
+  
+  .va-page .va-page-container .selamat {
+    font-weight: bold;
+    font-size: 42px;
+    margin-top: 25px;
+  }
+  
+  .va-page-container .koin {
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 19px;
+  }
+  
+  .va-page-container .liat {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .va-page-container .stars {
+    display: flex;
+    gap: 7px;
+    direction: rtl;
+    justify-content: center;
+  }
+  
+  .va-page-container .stars input {
+    display: none;
+  }
+  
+  .va-page-container .stars label {
+    font-size: 50px;
+    color: #d3d3d3;
+    cursor: pointer;
+  }
+  
+  .va-page-container .stars input:checked ~ label,
+  .va-page-container .stars label:hover,
+  .va-page-container .stars label:hover ~ label {
+    color: #ffd700;
+  }
+  
+  .va-page-container .popup-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 155px;
+    width: 500px;
+  }
+  
+  /* Buttons in Pop-Up */
+  .va-page-container .popup-button-container {
+    color: #287961;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .va-page-container .unggah-btn,
+  .va-page-container .rekom-btn {
+    color: white;
+    background-color: #287961; /* Mengubah warna background menjadi #287961 */
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .va-page-container .unggah-btn:hover,
+  .va-page-container .rekom-btn:hover {
+    background-color: #287961; /* Mengubah warna background saat hover menjadi #287961 */
+  }
+  
+  /* Footer */
+  .va-page footer {
+    background-color: #eaf5f2;
+    line-height: 1.5;
+  }
+  
+  /* Thicker Footer Separator Line */
+  .va-page .footer-separator {
+    width: 100%;
+    height: 10px; /* Increased height for a thicker line */
+    background-color: #147a63;
+  }
+  
+  .va-page .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .va-page .footer-logo img {
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 10px;
+  }
+  
+  .va-page .footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 75px;
+  }
+  
+  .va-page .customer-care,
+  .account,
+  .social-media {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .va-page .customer-care h3,
+  .account h3,
+  .social-media h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .va-page .customer-care p,
+  .account p,
+  .social-media p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  /* Footer Bottom */
+  .va-page .footer-bottom {
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Social Media Icons */
+  .va-page .social-icons {
+    display: flex;
+  }
+  
+  .va-page .social-icons a {
+    margin-right: 15px;
+  }
+  
+  .va-page .account {
+    text-decoration: none;
+  }
+  

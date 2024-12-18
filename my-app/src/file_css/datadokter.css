@@ -1,0 +1,373 @@
+.datadokters * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.datadokters body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styling */
+.datadokters header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.datadokters .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #147a63;
+}
+
+.datadokters nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: auto;
+}
+
+.datadokters nav ul li {
+  margin-right: 20px;
+}
+
+.datadokters nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Tombol Profil */
+.datadokters .auth-buttons {
+  margin-left: auto;
+}
+
+.datadokters .auth-buttons button {
+  background-color: #fff;
+  color: #147a63;
+  border: 2px solid #147a63;
+  border-radius: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.datadokters .auth-buttons button:hover {
+  background-color: #e3f2ed;
+}
+
+/* Main content styling */
+.datadokters main {
+  padding: 20px 50px;
+}
+
+.datadokters main h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #3b3b3b;
+  margin-bottom: 20px;
+}
+
+.datadokters .search-bar {
+  display: flex;
+  margin-top: 20px; /* Tambahkan margin di atas untuk memberi jarak dari tabel */
+}
+
+.datadokters .search-bar .search-input {
+  width: 100%; /* Lebar penuh */
+  max-width: 500px; /* Maksimal lebar */
+  padding: 15px; /* Padding lebih besar untuk tinggi */
+  font-size: 16px; /* Ukuran font lebih besar */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.datadokters main p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.datadokters .date input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.datadokters .form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.datadokters .input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 75%; /* Membuat input lebih besar */
+}
+
+.datadokters .input-group input,
+.datadokters .input-group select {
+  flex: 1 1 20%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.datadokters tbody img {
+  margin-right: 50px;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.datadokters table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.datadokters table th,
+.datadokters table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.datadokters table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.datadokters table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.datadokters button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #147a63;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px; /* Menambah jarak antara tombol */
+}
+
+.datadokters .delete-button {
+  margin-left: 5px; /* Menambah jarak antara tombol */
+}
+
+
+
+/* popup */
+.datadokters .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Pop-Up Content for Small Size */
+.datadokters .popup-content.small-popup {
+  width: 300px; /* Lebih kecil dari ukuran sebelumnya */
+  height: 200px; /* Sesuaikan tinggi */
+}
+
+/* Larger Text for Confirmation Message */
+.datadokters .popup-text-large {
+  font-size: 20px; /* Perbesar ukuran font */
+  font-weight: bold; /* Buat teks lebih tebal */
+  margin: 20px 0; /* Beri jarak atas dan bawah */
+}
+
+.datadokters .popup-content {
+  background-color: #e9f5f3;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+}
+
+.datadokters .popup-header {
+  background-color: #147a63;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.datadokters .popup-button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.datadokters .popup-button {
+  padding: 10px 50px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+
+
+/* Footer */
+.datadokters footer {
+  background-color: #eaf5f2;
+  line-height: 1.5;
+  padding: 20px 50px;
+}
+
+.datadokters .footer-separator.full-width {
+  width: 100vw;
+  margin-left: -50px; /* Menyesuaikan margin agar tepat di tepi halaman */
+  height: 10px;
+  background-color: #147a63;
+}
+
+.datadokters.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.datadokters .footer-logo img {
+  width: 150px;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.datadokters .footer-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 75px;
+}
+
+.datadokters .customer-care,
+.datadokters .account,
+.datadokters .social-media {
+  flex: 1;
+  min-width: 200px;
+}
+
+.datadokters .customer-care h3,
+.datadokters .account h3,
+.datadokters .social-media h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.datadokters .customer-care p,
+.datadokters .account p,
+.datadokters .social-media p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.datadokters .footer-bottom {
+  margin-left: 75px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Social Media Icons */
+.datadokters .social-icons {
+  display: flex;
+}
+
+.datadokters .social-icons a {
+  margin-right: 15px;
+}
+
+.datadokters .account {
+  text-decoration: none;
+}
+
+.datadokters form {
+  display: flex; /* Ubah form menjadi flex container */
+  flex-wrap: wrap; /* Elemen form bisa turun ke baris baru jika ruang tidak cukup */
+  gap: 20px; /* Jarak antar elemen form */
+  align-items: flex-start; /* Sejajarkan elemen di bagian atas */
+}
+
+.datadokters form label {
+  display: flex;
+  flex-direction: column; /* Label tetap di atas input/textarea */
+  flex: 1; /* Setiap elemen fleksibel untuk menyesuaikan ruang */
+  min-width: 200px; /* Pastikan elemen memiliki lebar minimum */
+  font-size: 16px;
+}
+
+.datadokters form textarea,
+.datadokters form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Input/textarea mengambil seluruh lebar label */
+  box-sizing: border-box; /* Agar padding tidak menambah total lebar */
+}
+
+.datadokters textarea {
+  flex: 1; /* Agar textarea menyesuaikan ruang yang tersedia */
+  min-width: 1200px; /* Lebar minimum untuk textarea */
+  width: 100%; /* Lebar penuh sesuai container */
+  height: 150px; /* Tinggi default */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical; /* Hanya memungkinkan resize vertikal */
+}
+
+.datadokters button {
+  align-self: flex-start; /* Tombol tetap di awal layout form */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #028a56;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.datadokters button:hover {
+  background-color: #026b45;
+}
+
+/* Responsif: Tata letak menjadi vertikal di layar kecil */
+@media (max-width: 768px) {
+  form {
+    flex-direction: column; /* Susunan elemen form vertikal di layar kecil */
+    align-items: stretch; /* Elemen memenuhi lebar container */
+  }
+}

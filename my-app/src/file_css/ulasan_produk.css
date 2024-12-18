@@ -1,0 +1,395 @@
+.ulasan-produk-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.ulasan-produk-page body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styling */
+.ulasan-produk-page header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ulasan-produk-page .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #028a56;
+}
+
+/* Navigasi */
+.ulasan-produk-page nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: auto; /* Menyebabkan navigasi ada di kiri */
+}
+
+.ulasan-produk-page nav ul li {
+  margin-right: 20px;
+}
+
+.ulasan-produk-page nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Tombol Login */
+.ulasan-produk-page .auth-buttons {
+  margin-left: auto; /* Menyebabkan tombol login ada di kanan */
+}
+
+.ulasan-produk-page .auth-buttons button {
+  background-color: #fff;
+  color: #147a63;
+  border: 2px solid #147a63;
+  border-radius: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ulasan-produk-page .auth-buttons button:hover {
+  background-color: #e3f2ed;
+}
+
+.ulasan-produk-page .title {
+  background-color: #eaf5f2;
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.ulasan-produk-page .title h1 {
+  margin-left: 550px;
+}
+
+.ulasan-produk-page .coba {
+  background: #fff;
+}
+
+.ulasan-produk-page .form-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+.ulasan-produk-page .form-section label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+}
+
+.ulasan-produk-page .options,
+.recommend {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.ulasan-produk-page .option {
+  padding: 10px 20px;
+  border: 2px solid #2a806f;
+  color: #2a806f;
+  border-radius: 25px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ulasan-produk-page .option.active {
+  background-color: #2a806f;
+  color: white;
+}
+
+.ulasan-produk-page textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.ulasan-produk-page .stars {
+  display: flex;
+  gap: 5px;
+  direction: rtl;
+  justify-content: left;
+}
+
+.ulasan-produk-page .stars input {
+  display: none;
+}
+
+.ulasan-produk-page .stars label {
+  font-size: 24px;
+  color: #d3d3d3;
+  cursor: pointer;
+}
+
+.ulasan-produk-page .stars input:checked ~ label,
+.ulasan-produk-page .stars label:hover,
+.ulasan-produk-page .stars label:hover ~ label {
+  color: #ffd700;
+}
+
+.ulasan-produk-page .submit-button {
+  width: 481px;
+  height: 52px;
+  border-radius: 10px;
+  background-color: #147a63;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-left: 90px;
+}
+
+.ulasan-produk-page .close-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ulasan-produk-page .close-btn:hover {
+  background-color: #45a049;
+}
+
+/* Pop-Up Container */
+.ulasan-produk-page .popup-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Pop-Up Content */
+.ulasan-produk-page .popup-content {
+  background-color: #e9f5f3;
+  border-radius: 10px;
+  width: 406px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Pop-Up Container */
+.ulasan-produk-page .popup-overlay-unggah {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Pop-Up Content */
+.ulasan-produk-page .popup-content-unggah {
+  background-color: #e9f5f3;
+  border-radius: 10px;
+  width: 406px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Pop-Up Header */
+.ulasan-produk-page .popup-header {
+  background-color: #287961;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ulasan-produk-page .selamat {
+  font-weight: bold;
+  font-size: 42px;
+  margin-top: 25px;
+}
+
+.ulasan-produk-page .koin {
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 19px;
+}
+
+.ulasan-produk-page .liat {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.ulasan-produk-page .stars {
+  display: flex;
+  gap: 7px;
+  direction: rtl;
+  justify-content: left;
+}
+
+.ulasan-produk-page .stars input {
+  display: none;
+}
+
+.ulasan-produk-page .stars label {
+  font-size: 50px;
+  color: #d3d3d3;
+  cursor: pointer;
+}
+
+.ulasan-produk-page .stars input:checked ~ label,
+.ulasan-produk-page .stars label:hover,
+.ulasan-produk-page .stars label:hover ~ label {
+  color: #ffd700;
+}
+
+/* Buttons in Pop-Up */
+.ulasan-produk-page .popup-button-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.ulasan-produk-page .tulis {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.ulasan-produk-page .textarea {
+  margin-top: 23px;
+  width: 312px;
+  height: 43px;
+  text-size: 14px;
+}
+
+.ulasan-produk-page .unggah-btn {
+  color: white;
+  background-color: #287961;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.ulasan-produk-page .rekom-btn {
+  color: white;
+  background-color: #287961;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ulasan-produk-page .unggah-btn:hover,
+.ulasan-produk-page .rekom-btn:hover {
+  background-color: #1d5d47;
+}
+
+/* footer */
+.ulasan-produk-page footer {
+  background-color: #eaf5f2;
+  padding: 40px 20px;
+  line-height: 1.5;
+}
+
+.ulasan-produk-page .footer-separator {
+  width: 100%;
+  height: 10px; /* Increased height for a thicker line */
+  background-color: #147a63;
+}
+
+.ulasan-produk-page .footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ulasan-produk-page .footer-logo img {
+  width: 150px;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.ulasan-produk-page .footer-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 75px;
+}
+
+.ulasan-produk-page .customer-care,
+.account,
+.social-media {
+  flex: 1;
+  min-width: 200px;
+}
+
+.ulasan-produk-page .customer-care h3,
+.account h3,
+.social-media h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.ulasan-produk-page .customer-care p,
+.account p,
+.social-media p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.ulasan-produk-page .footer-bottom {
+  margin-left: 75px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.ulasan-produk-page .social-icons {
+  display: flex;
+}
+
+.ulasan-produk-page .social-icons a {
+  margin-right: 15px;
+}
+
+.ulasan-produk-page .account {
+  text-decoration: none;
+}

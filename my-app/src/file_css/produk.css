@@ -1,0 +1,416 @@
+.produk-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.produk-page body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+.produk-page header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produk-page .header-divider {
+    position: relative;
+    height: 80px;
+    background-color: #E3F2ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produk-page .header-divider-text {
+    position: absolute;
+    background-color: #E3F2ED;
+    color: #3b3b3b;
+    font-size: 40px; /* Updated font size */
+    font-weight: bold;
+    height: 60px;
+}
+
+.produk-page .luar{
+    background-color: #ffff;
+    padding: 10px;
+}
+
+.produk-page .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #028A56;
+}
+
+.produk-page .ulas{
+
+}
+
+/* Container untuk setiap ulasan */
+.produk-page .review-container {
+    background-color: #E3F2ED;
+    border-radius: 10px;
+    height:110px;
+    width:1199px;
+    margin-bottom: 20px;
+    display: flex;
+    flex: 1 1 calc(16.66% - 10px); /* 16.66% untuk 6 kolom, kurangi gap */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left:80px;
+}
+
+/* Detail pengguna */
+.produk-page .user-details {
+    display: flex;
+    flex: 1 1 calc(16.66% - 10px); /* 16.66% untuk 6 kolom, kurangi gap */
+    align-items: center;
+    gap: 10px;
+}
+
+/* Rating bintang */
+.produk-page .star-rating {
+    color: #006400;
+    font-size: 40px;
+}
+
+.produk-page .rating {
+    color: #3b3b3b;
+    font-size: 40px;
+}
+
+/* Informasi pengguna */
+.produk-page .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Nama pengguna */
+.produk-page .user-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Tanggal ulasan */
+.produk-page .review-date {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Umur pengguna, tipe kulit, dan masalah kulit */
+.produk-page .user-age,
+.produk-page .skin-type,
+.produk-page .skin-issues {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Komentar ulasan */
+.produk-page .review-comment {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Navigasi */
+.produk-page nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+}
+
+.produk-page nav ul li {
+    margin-right: 20px;
+}
+
+.produk-page nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Tombol Login */
+.produk-page .auth-buttons {
+    margin-left: auto;
+}
+
+.produk-page .auth-buttons button {
+    background-color: #fff;
+    color: #147A63;
+    border: 2px solid #147A63;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.produk-page .auth-buttons button:hover {
+    background-color: #E3F2ED;
+}
+
+.produk-page .profile-container {
+    display: flex;
+    margin: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #3b3b3b; /* Border for the profile container */
+}
+
+.produk-page .profile-sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+}
+
+.produk-page .profile-coin-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-left: 85px;
+}
+
+.produk-page .profile-picture {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.produk-page .profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.produk-page .profile-info h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.produk-page .profile-info p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0 0;
+}
+
+.produk-page .ayune-coin {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+/* popup */
+.produk-page .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.produk-page .popup-content {
+    background-color: #E9F5F3;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+}
+
+.produk-page .popup-header {
+    background-color: #287961;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.produk-page .popup-button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.produk-page .popup-button {
+    padding: 10px 50px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.produk-page .btn-cancel {
+    color: #287961;
+    background-color: transparent;
+    border: 2px solid #287961;
+}
+
+.produk-page .btn-cancel:hover {
+    background-color: #d1e7e4;
+}
+
+.produk-page .btn-exit {
+    color: white;
+    background-color: #287961;
+    border: 2px solid #287961;
+}
+
+.produk-page .btn-exit:hover {
+    background-color: #1f5e4d;
+}
+
+.produk-page .ayune-coin p {
+    margin: 5px 0;
+}
+
+.produk-page .profile-info label {
+    margin: 5px;
+    font-weight: bold;
+    font-size:16;
+}
+
+.produk-page .profile-info input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #147A63;
+    border-radius: 10px;
+}
+
+.produk-page .logout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #147A63;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.produk-page .profile-main {
+    width: 70%;
+    padding: 20px;
+    border-left: 1px solid #3b3b3b; /* Border for the profile main */
+}
+
+.produk-page .section-title {
+    font-size: 40px;
+    color: #3b3b3b;
+    margin-bottom: 20px;
+    text-align: center; /* Centered title */
+}
+
+.produk-page .skin-profile {
+    margin-top: 25px;
+}
+
+.produk-page .skin-profile label {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+
+}
+
+.produk-page .skin-profile textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #147A63;
+    border-radius: 10px;
+    resize: none;
+}
+
+/* Footer */
+.produk-page footer {
+    background-color: #EAF5F2;
+    line-height: 1.5;
+}
+
+/* Thicker Footer Separator Line */
+.produk-page .footer-separator {
+    width: 100%;
+    height: 10px; /* Increased height for a thicker line */
+    background-color:#147A63;
+}
+
+.produk-page .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produk-page .footer-logo img {
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.produk-page .footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 75px;
+}
+
+.produk-page .customer-care, .account, .social-media {
+    flex: 1;
+    min-width: 200px;
+}
+
+.produk-page .customer-care h3, .account h3, .social-media h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.produk-page .customer-care p, .account p, .social-media p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.produk-page .footer-bottom {
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Social Media Icons */
+.produk-page .social-icons {
+    display: flex;
+}
+
+.produk-page .social-icons a {
+    margin-right: 15px;
+}
+
+.produk-page .account {
+    text-decoration: none;
+}

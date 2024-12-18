@@ -1,0 +1,293 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #028A56;
+}
+
+/* Navigation */
+.ahli-page-container nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+}
+
+.ahli-page-container nav ul li {
+    margin-right: 20px;
+}
+
+.ahli-page-container nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Login Button */
+.auth-buttons {
+    margin-left: auto;
+}
+
+.ahli-page-container .auth-buttons button {
+    background-color: #fff;
+    color: #147A63;
+    border: 2px solid #147A63;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ahli-page-container .auth-buttons button:hover {
+    background-color: #E3F2ED;
+}
+
+/* Main styling */
+.ahli-page-container main {
+    text-align: center;
+    background: #fff;
+}
+
+/* Green Header Section */
+.ahli-page-container .title h1 {
+    background-color: #EAF5F2;
+    padding: 5px;
+    margin: 0; /* Ensure no margin at the top */
+    font-size:40px;
+}
+
+/* Input Field Styling */
+.ahli-page-container input{
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+
+.ahli-page-container h1 {
+    color: #3b3b3b;
+    size-font:40px;
+    font-weight: bold;
+}
+
+/* Subtitle */
+.ahli-page-container .sub-title-h2 {
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 60px;
+    font-size:32px;
+}
+
+.ahli-page-container .sub-title-h4 h4{
+    text-align: left;
+    margin-left: 60px;
+}
+
+/* Expert Cards */
+.ahli-page-container .all-cards {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ahli-page-container .expert-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.ahli-page-container .expert-card-link .expert-card {
+    cursor: pointer;
+}
+
+.ahli-page-container .expert-card {
+    display: flex;
+    background-color: #E3F2ED;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: flex-start;
+    position: relative;
+    width: 370px;
+    height: 211px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    margin: 30px;
+}
+
+.ahli-page-container .expert-photo {
+    width: 80px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.ahli-page-container .expert-info {
+    flex: 1;
+    text-align: left;
+}
+
+.ahli-page-container .expert-info h3 {
+    color: #3b3b3b;
+    font-size: 17px;
+    margin: 0;
+}
+
+.ahli-page-container .specialty {
+    color: #777;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.ahli-page-container .card-details {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.ahli-page-container .card-details div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 9px;
+    font-size: 12px;
+    color: #3b3b3b;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ahli-page-container .availability {
+    background-color: #147A63;
+    color: #FFFFFF;
+    padding: 7px;
+    border-radius: 9px;
+    font-size: 12px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.ahli-page-container .price {
+    color: #3b3b3b;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.ahli-page-container .status {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: default;
+}
+
+.ahli-page-container .status.offline {
+    background-color: #B0B0B0;
+    color: #555;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.ahli-page-container .status.online {
+    background-color: #147A63;
+    color: #fff;
+    padding: 5px 36px;
+    font-weight: bold;
+}
+
+/* Footer */
+.ahli-page-container footer {
+    background-color: #EAF5F2;
+    line-height: 1.5;
+}
+
+/* Thicker Footer Separator Line */
+.ahli-page-container .footer-separator {
+    width: 100%;
+    height: 10px; /* Increased height for a thicker line */
+    background-color: #147A63;
+}
+
+.ahli-page-container .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ahli-page-container .footer-logo img {
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.ahli-page-container .footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 75px;
+}
+
+.ahli-page-container .customer-care, .account, .social-media {
+    flex: 1;
+    min-width: 200px;
+}
+
+.ahli-page-container .customer-care h3, .account h3, .social-media h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ahli-page-container .customer-care p, .account p, .social-media p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.ahli-page-container .footer-bottom {
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Social Media Icons */
+.ahli-page-container .social-icons {
+    display: flex;
+}
+
+.ahli-page-container .social-icons a {
+    margin-right: 15px;
+}
+
+.ahli-page-container .account {
+    text-decoration: none;
+}

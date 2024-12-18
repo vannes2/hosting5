@@ -1,0 +1,568 @@
+.consul-page-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.consul-page-container body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+.consul-page-container header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.consul-page-container .header-divider {
+    position: relative;
+    height: 80px;
+    background-color: #E3F2ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consul-page-container .header-divider-text {
+    position: absolute;
+    background-color: #E3F2ED;
+    color: #3b3b3b;
+    font-size: 40px; /* Updated font size */
+    font-weight: bold;
+    height: 60px;
+}
+
+.consul-page-container .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #028A56;
+}
+
+/* Navigasi */
+.consul-page-container nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: auto; /* Menyebabkan navigasi ada di kiri */
+}
+
+.consul-page-container nav ul li {
+    margin-right: 20px;
+}
+
+.consul-page-container nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Tombol Login */
+.consul-page-container .auth-buttons {
+    margin-left: auto; /* Menyebabkan tombol login ada di kanan */
+}
+
+.consul-page-container .auth-buttons button {
+    background-color: #fff;
+    color: #147A63;
+    border: 2px solid #147A63;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.consul-page-container .auth-buttons button:hover {
+    background-color: #E3F2ED;
+}
+
+/* Main Consultation Section */
+.consul-page-container .consultation {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+/* Chat Section */
+.consul-page-container .chat-section {
+    flex: 2;
+}
+
+.consul-page-container .chat-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 650px;
+    overflow-y: auto;
+    border: 2px solid #147A63;
+}
+
+.consul-page-container .chat-message p {
+    background-color: #EAF5F2;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.consul-page-container .chat-message.user p {
+    background-color: #028A56;
+    color: white;
+    margin-left: auto;
+}
+
+/* Styling Input Box */
+.consul-page-container .input-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    position: relative; /* Untuk memungkinkan kontrol posisi elemen dalam box */
+}
+
+/* Input Text */
+.consul-page-container .input-box input {
+    flex: 1; /* Mengambil seluruh lebar yang tersisa */
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Kontainer Ikon */
+.consul-page-container .input-icons {
+    position: absolute; /* Mengatur ikon agar lebih fleksibel */
+    right: 10px; /* Jarak ikon ke sisi kanan */
+    display: flex;
+    gap: 10px; /* Jarak antara ikon */
+    align-items: center;
+}
+
+/* Tombol Kamera */
+.consul-page-container .camera-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.consul-page-container .camera-button img {
+    width: 24px; /* Ukuran ikon */
+    height: 24px;
+    object-fit: cover;
+}
+
+/* Tombol Kirim */
+.consul-page-container .send-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.consul-page-container .send-button img {
+    width: 24px; /* Ukuran ikon */
+    height: 24px;
+    object-fit: cover;
+}
+
+
+/* Wrapper untuk ikon kamera dan pesawat */
+.consul-page-container .input-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styling ikon kamera */
+.consul-page-container .input-icons .camera-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.consul-page-container .input-icons .camera-button:hover {
+    background-color: #d0d0d0;
+}
+
+.consul-page-container .input-icons .camera-button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Styling ikon pesawat */
+.consul-page-container .input-icons .send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #147A63;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.consul-page-container .input-icons .send-button:hover {
+    background-color: #0d754b;
+}
+
+.consul-page-container .input-icons .send-button img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Ikon pesawat putih */
+}
+
+.consul-page-container .send-button {
+    background-color: #147A63;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .consul-page-container .send-button img {
+    filter: brightness(0) invert(1); /* Membuat ikon putih */
+  }
+  
+  .consul-page-container .send-button:hover {
+    background-color: #0d754b;
+  }
+  
+
+/* Doctor's Profile Section */
+.consul-page-container .profile-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.consul-page-container .doctor-profile img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 5px;
+}
+
+.consul-page-container .doctor-profile h1 {
+    font-size: 30px;
+    color: #3b3b3b;
+    margin-bottom: 15px;
+}
+
+.consul-page-container .doctor-profile h2 {
+    font-size: 16px;
+    color: #3b3b3b;
+    margin-top: 10px;
+}
+
+.consul-page-container .doctor-profile h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.consul-page-container .doctor-profile p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.consul-page-container .skin-problems form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.consul-page-container .skin-problems h1 {
+    font-size: 30px;
+    color: #3b3b3b;
+    margin-bottom: 15px;
+}
+
+.consul-page-container .skin-problems form input,
+.consul-page-container .skin-problems form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Dropdown styling */
+.consul-page-container .skin-problems form select {
+    width: 100%; /* Mengatur lebar dropdown agar sesuai dengan input lainnya */
+    padding: 10px; /* Memberikan padding pada dropdown */
+    margin-bottom: 10px; /* Jarak bawah untuk dropdown */
+    border: 1px solid #ccc; /* Border untuk dropdown */
+    border-radius: 5px; /* Membuat sudut dropdown melengkung */
+    background-color: #f9f9f9; /* Warna latar belakang dropdown */
+    font-size: 16px; /* Ukuran font untuk dropdown */
+    color: #333; /* Warna teks untuk dropdown */
+    appearance: none; /* Menghilangkan gaya default dropdown */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="0,0 20,0 10,10"/></svg>'); /* Menambahkan panah ke dropdown */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-position: right 10px center; /* Mengatur posisi gambar latar belakang */
+}
+
+/* Hover effect for dropdown */
+.consul-page-container .skin-problems form select:hover {
+    border-color: #147A63; /* Mengubah warna border saat hover */
+}
+
+/* Focus effect for dropdown */
+.consul-page-container .skin-problems form select:focus {
+    border-color: #147A63; /* Mengubah warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+.consul-page-container .skin-problems form button {
+    background-color: #147A63;
+    color: white;
+    height:35px;
+    width:170px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+}
+
+.consul-page-container .skin-problems form button:hover {
+    background-color: #0d754b;
+}
+
+/* Pop-Up Container */
+.consul-page-container .popup-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Pop-Up Content */
+.consul-page-container .popup-content {
+    background-color: #E9F5F3;
+    border-radius: 10px;
+    width: 406px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Pop-Up Container */
+.consul-page-container .popup-overlay-unggah {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Pop-Up Content */
+.consul-page-container .popup-content-unggah {
+    background-color: #E9F5F3;
+    border-radius: 10px;
+    width: 406px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Pop-Up Header */
+.consul-page-container .popup-header {
+    background-color: #287961;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.consul-page-container .selamat {
+    font-weight: bold;
+    font-size: 42px;
+    margin-top:25px;
+}
+
+.consul-page-container .koin {
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom:19px;
+}
+
+.consul-page-container .liat {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.consul-page-container .stars {
+    display: flex;
+    gap: 7px;
+    direction: rtl;
+    justify-content: center;
+}
+
+.consul-page-container .stars input {
+    display: none;
+}
+
+.consul-page-container .stars label {
+    font-size: 50px;
+    color: #D3D3D3;
+    cursor: pointer;
+}
+
+.consul-page-container .stars input:checked ~ label,
+.consul-page-container .stars label:hover,
+.consul-page-container .stars label:hover ~ label {
+    color: #FFD700;
+}
+
+/* Buttons in Pop-Up */
+.consul-page-container .popup-button-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.consul-page-container .tulis{
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+.consul-page-container .textarea{
+    margin-top:23px;
+    width:312px;
+    height:43px;
+    text-size:14px;
+}
+
+.consul-page-container .unggah-btn {
+    color: white;
+    background-color: #287961;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.consul-page-container .rekom-btn {
+    color: white;
+    background-color: #287961;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.consul-page-container .unggah-btn:hover,
+.consul-page-container .rekom-btn:hover {
+    background-color: #1d5d47;
+}
+
+/* Footer */
+.consul-page-container footer {
+    background-color: #EAF5F2;
+    line-height: 1.5;
+}
+
+/* Thicker Footer Separator Line */
+.consul-page-container .footer-separator {
+    width: 100%;
+    height: 10px; /* Increased height for a thicker line */
+    background-color: #147A63;
+}
+
+.consul-page-container .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.consul-page-container .footer-logo img {
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.consul-page-container .footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 75px;
+}
+
+.consul-page-container .customer-care, .account, .social-media {
+    flex: 1;
+    min-width: 200px;
+}
+
+.consul-page-container .customer-care h3, .account h3, .social-media h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.consul-page-container .customer-care p, .account p, .social-media p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.consul-page-container .footer-bottom {
+    margin-left: 75px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Social Media Icons */
+.consul-page-container .social-icons {
+    display: flex;
+}
+
+.consul-page-container .social-icons a {
+    margin-right: 15px;
+}
+
+.consul-page-container .account {
+    text-decoration: none;
+}
